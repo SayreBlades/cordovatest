@@ -9,7 +9,7 @@
     </author>
     <preference name="permissions" value="none" />
     <preference name="phonegap-version" value="3.5.0" />
-    <preference name="orientation" value="portrait" />
+    <!-- <preference name="orientation" value="portrait" /> -->
     <!-- <preference name="orientation" value="default" /> -->
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
@@ -67,6 +67,12 @@
     <gap:splash gap:platform="ios" height="640"  width="960"  src="res/screen/ios/screen-iphone-landscape-2x.png"/>
     <gap:splash gap:platform="ios" height="1024" width="768"  src="res/screen/ios/screen-ipad-portrait.png"/>
     <gap:splash gap:platform="ios" height="768"  width="1024" src="res/screen/ios/screen-ipad-landscape.png"/>
+
+    <gap:config-file platform="ios" parent="UISupportedInterfaceOrientations" overwrite="true">
+        <array>
+            <string>UIInterfaceOrientationPortrait</string>
+        </array>
+    </gap:config-file>
 
     <access origin="*" />
 </widget>
